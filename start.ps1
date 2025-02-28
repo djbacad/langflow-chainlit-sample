@@ -1,5 +1,5 @@
-# Get inside venv
-venv_langflow_local/Scripts/activate
+# Activate the virtual environment (PowerShell command)
+.\venv_langflow_local\Scripts\Activate.ps1
 
 # Opt out of telemetry tracking.
 $env:DO_NOT_TRACK = "true"
