@@ -4,6 +4,10 @@ from argparse import RawTextHelpFormatter
 import requests
 from typing import Optional
 import warnings
+import os
+from dotenv import load_dotenv 
+load_dotenv()
+
 try:
     from langflow.load import upload_file
 except ImportError:
@@ -11,11 +15,8 @@ except ImportError:
     upload_file = None
 
 BASE_API_URL = "http://127.0.0.1:7860"
-FLOW_ID = "49123ef2-7636-476a-a8ea-471070d3ce4d"
-ENDPOINT = "" # You can set a specific endpoint name in the flow settings
+FLOW_ID = os.getenv("FLOW_ID")
 
-# You can tweak the flow by adding a tweaks dictionary
-# e.g {"OpenAI-XXXXX": {"model_name": "gpt-4"}}
 TWEAKS = {
   "ChatInput-l7iqX": {},
   "ParseData-oV462": {},

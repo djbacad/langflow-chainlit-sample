@@ -1,2 +1,4 @@
-langflow==1.2.0
+uv==0.6.3
 chainlit==2.2.1
+langflow==1.2.0
+# pip ugrade langflow if problems arise after installing chainlit, i think chainlit's new versions might have caused some dependency issues

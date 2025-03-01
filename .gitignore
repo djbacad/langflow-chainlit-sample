@@ -1,2 +1,6 @@
-venv_langflow_local
+venv
 chroma_db_persist
+.env
+users.db
+test.ipynb
+init_db.py
