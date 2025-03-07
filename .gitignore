@@ -3,4 +3,3 @@ chroma_db_persist
 .env
 users.db
 test.ipynb
-init_db.py
